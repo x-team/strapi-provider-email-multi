@@ -4,21 +4,6 @@ const channels = {}
 const providers = {}
 
 module.exports = {
-  setup: (allOptions, ) => {
-    // set up providers
-  
-    Object.keys(channelMap).forEach(key => {
-      const providerKey = channelMap[key]
-      const providerOptions = allOptions[providerKey]
-
-      if (!provider) {
-        strapi.logger.error(`Unknown email provider: ${providerKey}. Using console instead.`)
-      }
-
-      channels[key] = providerKey || allOptions.console
-    })
-  },
-
   init: (providerOptions = {}, settings = {}) => {
   
     // Init all providers.
