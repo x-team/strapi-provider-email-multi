@@ -1,6 +1,6 @@
 {
   "name": "@x-team/strapi-provider-email-multi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Strapi email provider with multiple email channels.",
   "main": "index.js",
   "scripts": {
