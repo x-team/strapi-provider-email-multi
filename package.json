@@ -1,0 +1,12 @@
+{
+  "name": "@x-team/strapi-provider-email-multi",
+  "version": "1.0.0",
+  "description": "Strapi email provider with multiple email channels.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "joshwnj",
+  "license": "MIT"
+}
