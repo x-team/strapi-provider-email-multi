@@ -8,5 +8,13 @@
   },
   "keywords": [],
   "author": "joshwnj",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x-team/strapi-provider-email-multi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/x-team/strapi-provider-email-multi/issues"
+  },
+  "homepage": "https://github.com/x-team/strapi-provider-email-multi#readme"
 }
