@@ -17,15 +17,12 @@ module.exports = {
 
       channels[key] = providerKey || allOptions.console
     })
-
-    console.log({ channels })
   },
 
   init: (providerOptions = {}, settings = {}) => {
   
     // Init all providers.
     Object.keys(providerOptions.providers).forEach(key => {
-      console.log('set up', key, providerOptions.providers[key])
       providers[key] = providerOptions.init[key](
         providerOptions.providers[key],
         settings
