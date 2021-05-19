@@ -22,7 +22,7 @@ module.exports = {
       const providerKey = providerOptions.channels[channelKey]
       const provider = providers[providerKey]
       if (!provider) {
-        strapi.logger.error(`Unknown email provider: ${providerKey}. Using default.`)
+        strapi.log.error(`Unknown email provider: ${providerKey}. Using default.`)
       }
 
       channels[channelKey] = provider || providers.default
@@ -35,7 +35,7 @@ module.exports = {
         const provider = channels[channel]
 
         if (!provider) {
-          strapi.logger.error(`No provider for email channel: ${channel}. Using default.`)
+          strapi.log.error(`No provider for email channel: ${channel}. Using default.`)
         }
 
         return (provider || providers.default).send(options)
